@@ -26,6 +26,8 @@ export default function Hero() {
             src="/images/hero.jpg"
             alt="Nail artist creating a manicure"
             fill
+            loading="eager"
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"
           />
         </div>
