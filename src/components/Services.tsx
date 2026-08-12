@@ -2,80 +2,102 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <section>
-      <div className="border border-black flex items-center justify-between">
-        <div className="flex justify-center px-5 py-2 border border-black">
-          <h2>Our Top-Rated Signature Services</h2>
+    <section className="px-6 py-20 lg:px-8 lg:py-28">
+      {/* Section Header */}
+      <div className="mx-auto mb-12 flex max-w-7xl flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 className="max-w-xl text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
+            Our Top-Rated Signature Services
+          </h2>
         </div>
-        <div className="border border-black">
-          <p>
+        <div className="max-w-md">
+          <p className="text-base leading-relaxed text-gray-600">
             Enjoy a relaxing, personalized nail experience with services that
             blend expert craftsmanship and gentle self-care.
           </p>
-          <button type="button">View all</button>
+          <button
+            type="button"
+            className="mt-5 font-medium underline underline-offset-4 transition hover:text-[#b89c85]"
+          >
+            View all
+          </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-        <article className="border border-black">
-          <div className="relative aspect-4/3 w-full">
+
+      {/* Service Cards */}
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* Acrylic */}
+        <article className="group overflow-hidden rounded-2xl bg-[#f5f1ed]">
+          <div className="relative aspect-4/3 w-full overflow-hidden">
             <Image
               src="/images/services/acrylic.jpg"
               alt="Acrylic nail design"
               fill
+              loading="eager"
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              className="object-cover rounded-2xl"
+              className="object-cover transition duration-500 group-hover:scale-105"
             />
           </div>
-          <h3 className="m-2 p-3 font-medium text-3xl">Acrylic</h3>
-          <p className="">Strong, sculpted extensions with a clean, flawless finish.</p>
-          <button
-            type="button"
-            className="m-6 pl-6 pr-6 pt-3 pb-3 rounded-md gap-2.5 bg-[#B89C85] text-[#242424] hover:bg-[#b58c6b] font-medium"
-          >
-            Book Now
-          </button>
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-semibold">Acrylic</h3>
+            <p className="mt-3 leading-relaxed text-gray-600">
+              Strong, sculpted extensions with a clean, flawless finish.
+            </p>
+            <button
+              type="button"
+              className="mt-6 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transition hover:bg-[#b58c6b]"
+            >
+              Book Now
+            </button>
+          </div>
+          {/* Nail Art */}
         </article>
-        <article className="border border-black">
-          <div className="relative aspect-4/3 w-full">
+        <article className="group overflow-hidden rounded-2xl bg-[#f5f1ed]">
+          <div className="relative aspect-4/3 w-full overflow-hidden">
             <Image
               src="/images/services/nailart.jpg"
-              alt="Acrylic nail design"
+              alt="Decorative nail art design"
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              className="object-cover rounded-2xl"
+              className="object-cover transition duration-500 group-hover:scale-105"
             />
           </div>
-          <div>
-            <h3 className="m-2 p-3 font-medium text-3xl">Nail Art</h3>
-            <p>
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-semibold">Nail Art</h3>
+            <p className="mt-3 leading-relaxed text-gray-600">
               Expert nail care focused on clean finishes and lasting quality.
             </p>
             <button
               type="button"
-              className="m-6 pl-6 pr-6 pt-3 pb-3 rounded-md gap-2.5 bg-[#B89C85] text-[#242424] hover:bg-[#b58c6b] font-medium"
+              className="mt-6 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transition hover:bg-[#b58c6b]"
             >
               Book Now
             </button>
           </div>
         </article>
-        <article className="border border-black">
-          <div className="relative aspect-4/3 w-full">
+        {/* Gel Polish */}
+        <article className="group overflow-hidden rounded-2xl bg-[#f5f1ed]">
+          <div className="relative aspect-4/3 w-full overflow-hidden">
             <Image
               src="/images/services/gelpolish.jpg"
-              alt="Acrylic nail design"
+              alt="Gel polish nail design"
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              className="object-cover rounded-2xl"
+              className="object-cover transition duration-500 group-hover:scale-105"
             />
           </div>
-          <h3 className="m-2 p-3 font-medium text-3xl">Gel Polish</h3>
-          <p>Smooth gel polish with a high-shine long-lasting finish.</p>
-          <button
-            type="button"
-            className="m-6 pl-6 pr-6 pt-3 pb-3 rounded-md gap-2.5 bg-[#B89C85] text-[#242424] hover:bg-[#b58c6b] font-medium"
-          >
-            Book Now
-          </button>
+          <div className="flex flex-col p-6">
+            <h3 className="text-2xl font-semibold">Gel Polish</h3>
+            <p className="mt-3 leading-relaxed text-gray-600">
+              Smooth gel polish with a high-shine long-lasting finish.
+            </p>
+            <button
+              type="button"
+              className="mt-6 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transition hover:bg-[#b58c6b]"
+            >
+              Book Now
+            </button>
+          </div>
         </article>
       </div>
     </section>
