@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav className="pr-32 pl-32 border border-gray-800">
-      <div className="m-4 flex items-center justify-between">
+      <div className="m-2 flex items-center justify-between">
         <h2 className="pl-6 pr-6 pt-3 pb-3 flex items-center border border-gray-800 rounded-md">
           Logo ✨
         </h2>
