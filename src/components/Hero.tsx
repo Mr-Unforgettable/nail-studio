@@ -23,7 +23,7 @@ export default function Hero() {
         {/* Image */}
         <div className="relative min-h-100 w-full sm:min-h-125 lg:min-h-0 lg:h-full">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero/hero.jpg"
             alt="Nail artist creating a manicure"
             fill
             loading="eager"
