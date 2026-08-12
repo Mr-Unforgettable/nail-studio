@@ -9,7 +9,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#fdf9f6]">
       <Navbar />
       <Hero />
       <Services />
