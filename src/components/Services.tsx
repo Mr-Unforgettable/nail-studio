@@ -75,21 +75,23 @@ export default function Services() {
 
             {/* Overlay */}
             <div className="absolute inset-x-4 bottom-4 rounded-xl bg-white/85 p-4 backdrop-blur-sm md:p-5">
-            <h3 className="font-serif text-2xl text-[#292929]">
-              {service.title}
-            </h3>
+              <h3 className="font-serif text-2xl text-[#292929]">
+                {service.title}
+              </h3>
 
-            <p className="mt-3 text-sm leading-relaxed text-[#665d57] md:text-base">
-              {service.description}
-            </p>
+              <p className="mt-3 text-sm leading-relaxed text-[#665d57] md:text-base">
+                {service.description}
+              </p>
 
-            <button type="button" className="mt-5 rounded-md bg-[#b89c85] px-5 py-2.5 text-sm font-medium text-[#242424] transition hover:bg-[#b85c6b]">
-              Book now
-            </button>
+              <button
+                type="button"
+                className="mt-5 rounded-md bg-[#b89c85] px-5 py-2.5 text-sm font-medium text-[#242424] transition hover:bg-[#b85c6b]"
+              >
+                Book now
+              </button>
             </div>
           </article>
         ))}
-
       </div>
     </section>
   );
