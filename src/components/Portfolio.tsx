@@ -30,37 +30,33 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <section className="bg-[#f8f3ef] px-6 py-20 lg:px-8 lg:py-28">
-      {/* Header */}
-      <div className="mx-auto mb-12 mx-w-6xl">
-        <div className="grid gap-8 md:grid-cols-2 md:items-end">
-          {/* Left */}
-          <div>
-            <span className="inline-block rounded-full bg-white px-3 py-2 text-sm text-[#665d57] shadow-sm">
-              Gallery
-            </span>
+      <div className="mx-auto max-w-6xl">
+        {/* Label */}
+        <span className="inline-block rounded-full bg-white px-4 py-2 text-sm text-[#665d57] shadow-sm">
+          Gallery
+        </span>
 
-            <h2 className="mt-8 font-serif text-4xl leading-tight text-[#292929] md:text-5xl">
-              The Art of Beautiful Nails
-            </h2>
-          </div>
+        {/* Header */}
+        <div className="mt-8 grid gap-8 lg:grid-cols-2">
+          <h2 className="font-serif text-4xl leading-tight md:text-5xl">
+            The Art of Beautiful Nails
+          </h2>
 
           {/* Right */}
-          <div className="max-w-md md:justify-self-end">
-            <p className="text-base leading-relaxed text-[#665d57] md:text-lg">
+          <div className="max-w-xl">
+            <p className="text-lg leading-relaxed text-[#665d57]">
               A curated collection of nail designs showcasing clean finishes,
               detail, and creativity.
             </p>
 
             <button
               type="button"
-              className="mt-6 flex items-center gap-2 rounded-full bg-[#292929] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
+              className="mt-6 rounded-full bg-[#292929] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
             >
-              View all
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[#292929]">
-                ↗
-              </span>
+              View all ↗
             </button>
           </div>
+          <div className="max-w-xl md:justify-self-end"></div>
         </div>
       </div>
 
