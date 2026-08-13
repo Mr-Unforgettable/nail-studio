@@ -29,7 +29,7 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <section className="bg-[#f8f3ef] px-6 py-20 lg:px-8 lg:py-28">
+    <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#f8f3ef] ">
       <div className="mx-auto max-w-6xl">
         {/* Label */}
         <span className="inline-block rounded-full bg-white px-4 py-2 text-sm text-[#665d57] shadow-sm">
@@ -65,7 +65,7 @@ export default function Portfolio() {
         {portfolioItems.map((item, index) => (
           <article
             key={item.number}
-            className={"rounded-xl border border-[#d8cfc8] bg-[#fffdfb] p-4"}
+            className={"rounded-xl border border-[#d8cfc8] bg-[#fffdfb] p-4 transition duration-300 hover:scale-105"}
           >
             <div
               className={`relative w-full overflow-hidden rounded-lg ${

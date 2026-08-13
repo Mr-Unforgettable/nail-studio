@@ -58,7 +58,7 @@ export default function About() {
         {/* Content */}
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {/* Image */}
-          <div className="relative aspect-4.6/3 overflow-hidden rounded-xl">
+          <div className="relative aspect-4.6/3 overflow-hidden rounded-xl transition duration-300 hover:scale-105">
             <Image
               src="/images/About/About.jpg"
               alt="Nail artist working on a client's nails"
@@ -76,7 +76,7 @@ export default function About() {
               return (
                 <article
                   key={feature.title}
-                  className="flex items-center gap-5 rounded-xl border border-[#d8cfc8] bg-[#fffdfb] p-3"
+                  className="flex items-center gap-5 rounded-xl border border-[#d8cfc8] bg-[#fffdfb] p-3 transition duration-300 hover:scale-105"
                 >
                   <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-[#dcc6b1]">
                     <Icon size={32} strokeWidth={1.5} />
