@@ -24,44 +24,42 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="px-6 py-20 lg:px-8 lg:py-20 bg-[#f5efea]">
-      {/* Section Header */}
-      <div className="mx-auto mb-12 max-w-6xl">
-        <div className="grid gap-8 md:grid-cols-2 md:items-end">
+    <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#f5efea]">
+      <div className="mx-auto max-w-6xl">
+        {/* Label */}
+        <span className="inline-block rounded-full bg-white px-4 py-2 text-sm text-[#665d57] shadow-sm">
+          Services
+        </span>
+
+        {/* Headers */}
+        <div className="mt-8 grid gap-8 md:grid-cols-2 md:items-end">
           {/* Left */}
-          <div>
-            <span className="inline-block rounded-full bg-white mb-10 px-3 py-2 text-sm text-[#665d57] shadow-sm">
-              Services
-            </span>
-            <h2 className="max-w-xl text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
-              Our Top-Rated Signature Services
-            </h2>
-          </div>
+          <h2 className="font-serif text-4xl leading-tight tracking-tight md:text-5xl">
+            Our Top-Rated Signature Services
+          </h2>
+
           {/* Right */}
-          <div className="max-w-md md:justify-self-end">
-            <p className="text-base leading-relaxed text-[#665d57] md:text-lg">
+          <div className="max-w-xl">
+            <p className="text-lg leading-relaxed text-[#6b5e55]">
               Enjoy a relaxing, personalized nail experience with services that
               blend expert craftsmanship and gentle self-care.
             </p>
             <button
               type="button"
-              className="mt-6 flex items-center gap-2 rounded-full bg-[#242424] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
+              className="mt-6 rounded-full bg-[#242424] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
             >
-              View all
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[#292625]">
-                ↗
-              </span>
+              View all ↗
             </button>
           </div>
         </div>
       </div>
 
       {/* Service Cards */}
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 mx-38 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <article
             key={service.title}
-            className="group relative aspect-3/4 overflow-hidden rounded-xl"
+            className="group relative aspect-4/5 overflow-hidden rounded-xl"
           >
             {/* Image */}
             <Image
