@@ -24,19 +24,21 @@ const features = [
 
 export default function About() {
   return (
-    <section className="bg-[#f5efea] px-6 py-20 lg:px-8 lg:py-28">
+    <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#f5efea]">
       <div className="mx-auto max-w-6xl">
         {/* Label */}
-        <span className="inline-block rounded-full bg-white px-4 py-2 text-sm text-[#6b5e55]">
+        <span className="inline-block rounded-full bg-white px-4 py-2 text-sm text-[#6b5e55] shadow-sm">
           About
         </span>
 
         {/* Header */}
         <div className="mt-8 grid gap-8 lg:grid-cols-2">
+          {/* Left */}
           <h2 className="font-serif text-4xl leading-tight md:text-5xl">
             Meet your Nail Artist
           </h2>
 
+          {/* Right */}
           <div className="max-w-xl">
             <p className="text-lg leading-relaxed text-[#6b5e55]">
               I specialize in clean, modern nail care with a focus on detail,
@@ -46,7 +48,7 @@ export default function About() {
 
             <button
               type="button"
-              className="mt-6 rounded-full bg-[#242424] px-5 py-3 text-sm text-white"
+              className="mt-6 rounded-full bg-[#242424] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
             >
               Learn more ↗
             </button>
