@@ -83,7 +83,7 @@ export default function Services() {
 
               <button
                 type="button"
-                className="mt-5 rounded-md bg-[#b89c85] px-5 py-2.5 text-sm font-medium text-[#242424] transition hover:bg-[#b85c6b]"
+                className="mt-5 rounded-md px-5 py-2.5 text-sm font-medium text-[#242424] transition bg-[#b89c85] hover:bg-[#b58c6b]"
               >
                 Book now
               </button>
