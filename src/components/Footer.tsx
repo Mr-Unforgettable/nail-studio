@@ -1,4 +1,5 @@
 import { Phone, MapPin, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -22,36 +23,36 @@ export default function Footer() {
 
             <ul className="flex flex-col gap-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="text-[#6b5e55] transition hover:text-[#242424]"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services"
                   className="text-[#6b5e55] transition hover:text-[#242424]"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-[#6b5e55] transition hover:text-[#242424]"
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-[#6b5e55] transition hover:text-[#242424]"
                 >
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
