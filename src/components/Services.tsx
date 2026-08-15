@@ -55,18 +55,17 @@ export default function Services() {
       </div>
 
       {/* Service Cards */}
-      <div className="mt-12 mx-38 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <article
             key={service.title}
-            className="group relative aspect-4/5 overflow-hidden rounded-xl"
+            className="group relative min-h-100 overflow-hidden rounded-xl lg:aspect-4/5 lg:min-h-0"
           >
             {/* Image */}
             <Image
               src={service.image}
               alt={service.alt}
               fill
-              loading="eager"
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
               className="object-cover transition duration-500 group-hover:scale-105"
             />
