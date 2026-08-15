@@ -2,6 +2,7 @@ export default function Policies() {
   return (
     <section className="px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
       <div className="mx-auto max-w-6xl">
+        
         {/* Header */}
         <div className="max-w-xl">
           <h1 className="font-serif text-4xl leading-tight md:text-5xl">
