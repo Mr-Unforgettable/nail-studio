@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
 import { MenuIcon, X } from "lucide-react";
 
@@ -7,33 +7,33 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#f8f3ef] border border-[#e8dcd3] px-6 lg:px-32">
+    <nav className="sticky top-0 z-50 bg-[#f8f3ef] border border-[#e8dcd3] px-6 lg:px-8">
       {/* Main navbar row */}
       <div className="m-2 flex items-center justify-between">
         {/* Logo */}
-        <h2 className="flex items-center rounded-md border border-gray-500 px-6 py-3">
+        <Link className="flex items-center rounded-md border border-gray-500 px-6 py-3" href="/">
           Logo ✨
-        </h2>
+        </Link>
 
         {/* Desktop navigation */}
         <ul className="m-4 hidden items-center gap-8 lg:flex">
           <li>
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#">Services</a>
+            <Link href="/services">Services</Link>
           </li>
           <li>
-            <a href="#">Booking</a>
+            <Link href="#">Booking</Link>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <Link href="#">Portfolio</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="#">About</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link href="#">Contact</Link>
           </li>
         </ul>
 
@@ -49,7 +49,9 @@ export default function Navbar() {
         <button
           type="button"
           className="lg:hidden"
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
         >
@@ -61,34 +63,34 @@ export default function Navbar() {
       {menuOpen && (
         <ul className="flex flex-col gap-4 border-t border-[#e8dcd3] py-5 lg:hidden">
           <li>
-            <a href="#" onClick={() => setMenuOpen(false)}>
+            <Link href="/" onClick={() => setMenuOpen(false)}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" onClick={() => setMenuOpen(false)}>
+            <Link href="/services" onClick={() => setMenuOpen(false)}>
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" onClick={() => setMenuOpen(false)}>
+            <Link href="#" onClick={() => setMenuOpen(false)}>
               Booking
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" onClick={() => setMenuOpen(false)}>
+            <Link href="#" onClick={() => setMenuOpen(false)}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" onClick={() => setMenuOpen(false)}>
+            <Link href="#" onClick={() => setMenuOpen(false)}>
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" onClick={() => setMenuOpen(false)}>
+            <Link href="#" onClick={() => setMenuOpen(false)}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       )}
