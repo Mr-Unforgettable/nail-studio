@@ -2,31 +2,34 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex-1">
-      <div className="mx-auto grid min-h-[90vh] grid-cols-1 items-center lg:grid-cols-2">
+    <section className="bg-[#f8f3ef]">
+      <div className="grid min-h-full grid-cols-1 lg:grid-cols-2 px-6 sm:px-8 lg:px-0">
         {/* Content */}
-        <div className="mx-32 px-6 py-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold leading-tight md:text-5xl">
+        <div className="flex flex-col justify-center px-6 py-12 sm:px-8 lg:px-12">
+          <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
             Beautiful Nails, <br /> Designed Just for You
           </h1>
-          <p className="mt-6 text-lg">
+
+          <p className="mt-6 max-w-xl text-base leading-relaxed sm:text-lg">
             Elevate your everyday look with nail services focused on artistry,
             comfort, and clean, luxurious detail.
           </p>
+
           <button
             type="button"
-            className="mt-8 rounded-md bg-[#B89C85] text-[#242424] hover:bg-[#b58c6b] font-medium px-6 py-3"
+            className="mt-8 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transition hover:bg-[#b58c6b]"
           >
             Book Now
           </button>
         </div>
+
         {/* Image */}
-        <div className="relative min-h-100 w-full sm:min-h-125 lg:min-h-0 lg:h-full">
+        <div className="relative justify-between aspect-4/3 w-full lg:aspect-auto lg:min-h-[calc(100vh-4rem)]">
           <Image
             src="/images/hero/hero.jpg"
             alt="Nail artist creating a manicure"
             fill
-            loading="eager"
+            priority
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"
           />
