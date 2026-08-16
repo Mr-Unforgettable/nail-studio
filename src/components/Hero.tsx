@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Image */}
         <div className="relative justify-between aspect-4/3 w-full lg:aspect-auto lg:min-h-[calc(100vh-4rem)]">
           <Image
-            src="/images/hero/hero.jpg"
+            src="/images/Hero/hero.jpg"
             alt="Nail artist creating a manicure"
             fill
             priority
