@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
             type="button"
             className="mt-8 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transition hover:bg-[#b58c6b]"
           >
-            Book Now
+            <Link href="/booknow">Book Now</Link>
           </button>
         </div>
 

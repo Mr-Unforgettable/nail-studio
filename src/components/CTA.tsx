@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -28,7 +29,7 @@ export default function CTA() {
               type="button"
               className="mr-auto rounded-md px-5 py-2.5 text-sm font-medium text-[#242424] transition bg-[#b89c85] hover:bg-[#b58c6b]"
             >
-              Book now
+              <Link href="/booknow">Book now</Link>
             </button>
           </div>
         </div>
