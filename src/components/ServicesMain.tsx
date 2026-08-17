@@ -147,7 +147,7 @@ export default function ServicesMain() {
               {category.services.map((service) => (
                 <article
                   key={service.title}
-                  className="mt-5 flex gap-5 max-w-3xl rounded-xl border border-[#d9cfc8] bg-[#fffdfb] p-3 shadow-xl transition duration-500 hover:scale-105"
+                  className="mt-5 flex gap-5 max-w-3xl rounded-xl border border-[#d9cfc8] bg-[#fffdfb] p-3 transition duration-500 hover:scale-105"
                 >
                   {/* Image */}
                   <Image
