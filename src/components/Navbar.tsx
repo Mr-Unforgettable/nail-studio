@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import { MenuIcon, X } from "lucide-react";
@@ -24,13 +25,13 @@ export default function Navbar() {
         {/* Desktop navigation */}
         <ul className="m-4 hidden items-center gap-8 lg:flex">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="#home">Home</Link>
           </li>
           <li>
             <Link href="/services">Services</Link>
           </li>
           <li>
-            <Link href="#">Booking</Link>
+            <Link href="/booknow">Booking</Link>
           </li>
           <li>
             <Link href="#">Portfolio</Link>
@@ -48,7 +49,7 @@ export default function Navbar() {
           type="button"
           className="hidden rounded-md bg-[#B89C85] px-6 py-3 font-medium text-[#242424] hover:bg-[#b58c6b] lg:block"
         >
-          Book Now
+          <Link href="/booknow">Book Now</Link>
         </button>
 
         {/* Mobile menu button */}
@@ -94,7 +95,7 @@ export default function Navbar() {
               <li>
                 <Link
                   className={mobileLinkClass}
-                  href="/"
+                  href="#home"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
@@ -112,7 +113,7 @@ export default function Navbar() {
               <li>
                 <Link
                   className={mobileLinkClass}
-                  href="#"
+                  href="/booknow"
                   onClick={() => setMenuOpen(false)}
                 >
                   Booking
@@ -152,6 +153,7 @@ export default function Navbar() {
               type="button"
               className="mt-auto rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] hover:bg-[#b58c6b]"
             >
+              <Link href="/booknow"></Link>
               Book Now
             </button>
           </aside>
