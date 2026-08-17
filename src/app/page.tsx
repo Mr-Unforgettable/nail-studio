@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col">
       <Navbar />
-      <main className="flex-1">
+      <main id="home" className="flex-1 scroll-mt-24">
         <Hero />
         <Services />
         <Portfolio />
