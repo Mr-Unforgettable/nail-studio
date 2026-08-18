@@ -3,7 +3,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Portfolio from "@/components/Portfolio";
+import PortfolioPreview from "@/components/PortfolioPreview";
 import Services from "@/components/ServicesPreview";
 import Testimonials from "@/components/Testimonials";
 
@@ -14,7 +14,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Services />
-        <Portfolio />
+        <PortfolioPreview />
         <About />
         <Testimonials />
         <CTA />
