@@ -15,10 +15,7 @@ export default function Navbar() {
       {/* Main navbar row */}
       <div className="m-2 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          className="flex items-center rounded-md px-6 py-3"
-          href="/"
-        >
+        <Link className="flex items-center rounded-md px-6 py-3" href="/">
           <svg
             width="162"
             height="30"
@@ -26,7 +23,7 @@ export default function Navbar() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_16_58)">
+            <g clipPath="url(#clip0_16_58)">
               <path
                 d="M12.4938 30H11.5363C9.04898 30 7.55251 29.9995 6.40936 29.7869L13.0251 21.0258L12.4938 30Z"
                 fill="#242424"
@@ -71,7 +68,7 @@ export default function Navbar() {
         {/* Desktop navigation */}
         <ul className="m-4 hidden items-center gap-8 lg:flex">
           <li>
-            <Link href="#home">Home</Link>
+            <Link href="/#home">Home</Link>
           </li>
           <li>
             <Link href="/services">Services</Link>
@@ -91,12 +88,17 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        <button
+        {/* <button
           type="button"
           className="hidden rounded-md bg-[#B89C85] px-6 py-3 font-medium text-[#242424] hover:bg-[#b58c6b] lg:block"
         >
-          <Link href="/booknow">Book Now</Link>
-        </button>
+        </button> */}
+        <Link
+          href="/booknow"
+          className="hidden rounded-md bg-[#B89C85] px-6 py-3 font-medium text-[#242424] hover:bg-[#b58c6b] lg:block"
+        >
+          Book Now
+        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -141,7 +143,7 @@ export default function Navbar() {
               <li>
                 <Link
                   className={mobileLinkClass}
-                  href="#home"
+                  href="/#home"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
@@ -195,13 +197,13 @@ export default function Navbar() {
             </ul>
 
             {/* Sidebar CTA */}
-            <button
-              type="button"
-              className="mt-auto rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] hover:bg-[#b58c6b]"
+            <Link
+              href="/booknow"
+              onClick={() => setMenuOpen(false)}
+              className="mt-auto rounded-md bg-[#b89c85] px-6 py-3 text-center font-medium text-[#242424] hover:bg-[#b58c6b]"
             >
-              <Link href="/booknow"></Link>
               Book Now
-            </button>
+            </Link>
           </aside>
         </>
       )}

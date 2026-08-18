@@ -15,7 +15,7 @@ export default function Footer() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_16_58)">
+            <g clipPath="url(#clip0_16_58)">
               <path
                 d="M12.4938 30H11.5363C9.04898 30 7.55251 29.9995 6.40936 29.7869L13.0251 21.0258L12.4938 30Z"
                 fill="#242424"
