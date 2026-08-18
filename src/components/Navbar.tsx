@@ -77,7 +77,7 @@ export default function Navbar() {
             <Link href="/booknow">Booking</Link>
           </li>
           <li>
-            <Link href="#">Portfolio</Link>
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li>
             <Link href="#">About</Link>
@@ -170,7 +170,7 @@ export default function Navbar() {
               <li>
                 <Link
                   className={mobileLinkClass}
-                  href="#"
+                  href="/portfolio"
                   onClick={() => setMenuOpen(false)}
                 >
                   Portfolio
