@@ -80,7 +80,7 @@ export default function Navbar() {
             <Link href="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link href="#">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <Link href="#">Contact</Link>
@@ -179,7 +179,7 @@ export default function Navbar() {
               <li>
                 <Link
                   className={mobileLinkClass}
-                  href="#"
+                  href="/about"
                   onClick={() => setMenuOpen(false)}
                 >
                   About
