@@ -116,7 +116,7 @@ export default function PortfolioMain() {
         {filteredItems.map((item) => (
           <article
             key={item.id}
-            className={`${layoutClasses[item.layout as keyof typeof layoutClasses]} self-start overflow-hidden rounded-lg border border-[#d9cfc8] p-3 bg-[#fffdfb]  transition duration-500 hover:scale-105`}
+            className={`${layoutClasses[item.layout as keyof typeof layoutClasses]} self-start overflow-hidden rounded-lg border border-[#d9cfc8] p-3 bg-[#fffdfb]  transition duration-700 hover:scale-105`}
           >
             <div
               className={`relative ${
