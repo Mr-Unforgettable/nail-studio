@@ -92,7 +92,6 @@ export default function PortfolioMain() {
       {/* Categories */}
       <nav className="mx-auto mt-8 max-w-6xl">
         <ul className="flex flex-wrap gap-8">
-
           {/* Categories */}
           {categories.map((category) => (
             <li key={category}>
@@ -116,21 +115,21 @@ export default function PortfolioMain() {
       <div className="mx-auto mt-12 grid max-w-6xl grid-cols-6 gap-4">
         {filteredItems.map((item) => (
           <article
-          key={item.id}
-          className={`${layoutClasses[item.layout as keyof typeof layoutClasses]} self-start overflow-hidden rounded-lg border border-[#d9cfc8] p-3 bg-[#fffdfb]  transition duration-500 hover:scale-105`}
+            key={item.id}
+            className={`${layoutClasses[item.layout as keyof typeof layoutClasses]} self-start overflow-hidden rounded-lg border border-[#d9cfc8] p-3 bg-[#fffdfb]  transition duration-500 hover:scale-105`}
           >
-            <div className={`relative ${
-              item.layout === "featured"
-              ? "aspect-5/2"
-              : "aspect-square"
-            }`}>
+            <div
+              className={`relative ${
+                item.layout === "featured" ? "aspect-5/2" : "aspect-square"
+              }`}
+            >
               <Image
                 src={item.image}
                 alt={item.alt}
                 fill
                 sizes="(min-width: 1024px) 33vw, 100vw"
                 className="object-cover"
-                />
+              />
             </div>
 
             <div className="px-2 py-1">
