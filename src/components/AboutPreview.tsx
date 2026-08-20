@@ -22,7 +22,7 @@ const features = [
   },
 ];
 
-export default function About() {
+export default function AboutPreview() {
   return (
     <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#f5efea]">
       <div className="mx-auto max-w-6xl">

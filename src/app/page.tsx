@@ -1,4 +1,4 @@
-import About from "@/components/About";
+import AboutPreview from "@/components/AboutPreview";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <Services />
         <PortfolioPreview />
-        <About />
+        <AboutPreview />
         <Testimonials />
         <CTA />
         <Footer />
