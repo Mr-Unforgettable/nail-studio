@@ -92,7 +92,7 @@ export default function ServicesMain() {
   return (
     <section className="px-6 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
-        <h1 className="font-serif text-4xl md:text-5xl">Services</h1>
+        <h2 className="font-serif text-4xl md:text-5xl">Services</h2>
 
         <p className="mt-3 text-[#6b5e55]">
           Explore a curated menu of nail services.
