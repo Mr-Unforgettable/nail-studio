@@ -83,7 +83,7 @@ export default function Navbar() {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="#">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
 
@@ -188,7 +188,7 @@ export default function Navbar() {
               <li>
                 <Link
                   className={mobileLinkClass}
-                  href="#"
+                  href="/contact"
                   onClick={() => setMenuOpen(false)}
                 >
                   Contact
