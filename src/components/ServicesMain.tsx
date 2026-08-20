@@ -90,7 +90,7 @@ export default function ServicesMain() {
         );
 
   return (
-    <section className="px-6 py-16 sm:px-8 lg:px-12">
+    <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#fdf9f6]">
       <div className="mx-auto max-w-6xl">
         <h2 className="font-serif text-4xl md:text-5xl">Services</h2>
 

@@ -79,7 +79,7 @@ export default function PortfolioMain() {
       : galleryItems.filter((item) => item.category === selectedCategory);
 
   return (
-    <section className="px-6 py-20 lg:px-8 lg:py-28">
+    <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#fdf9f6]">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl">Gallery</h2>
 

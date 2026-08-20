@@ -4,7 +4,7 @@ import BookingStep from "./BookingStep";
 export default function Booking() {
   return (
     <>
-      <section className="px-6 py-20 lg:px-8 lg:py-28">
+      <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#fdf9f6]">
         {/* Heading + Description */}
         <div className="mx-auto w-full max-w-6xl">
           <div className="flex flex-1 flex-col">
