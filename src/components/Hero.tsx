@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section id="home" className="scroll-mt-24 bg-[#f8f3ef]">
-      <div className="grid min-h-full grid-cols-1 lg:grid-cols-2 px-6 sm:px-8 lg:px-0">
+      <div className="grid min-h-full grid-cols-1 lg:grid-cols-[1.7fr_1fr] px-6 sm:px-8 lg:px-0">
         {/* Content */}
-        <div className="flex flex-col justify-center px-6 py-12 sm:px-8 lg:px-12">
-          <h1 className="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+        <div className="m-auto max-w-6xl flex flex-col justify-center px-6 py-12 sm:px-8 lg:px-12">
+          <h1 className="text-3xl leading-tight sm:text-5xl sm:font-semibold lg:text-7xl">
             Beautiful Nails, <br /> Designed Just for You
           </h1>
 
