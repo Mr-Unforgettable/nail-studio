@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 
-import MissionVision from "./MissionVision";
-import Accordion from "./Accordion";
-
 export default function AboutMain() {
   return (
     <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#fdf9f6]">
@@ -48,12 +45,6 @@ export default function AboutMain() {
           </div>
         </div>
       </div>
-
-      {/* Mission + Vision */}
-      <MissionVision />
-
-      {/* Accordion Section */}
-      <Accordion />
     </section>
   );
 }

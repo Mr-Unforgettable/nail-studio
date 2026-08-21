@@ -1,6 +1,8 @@
 import AboutMain from "@/components/AboutMain";
+import Accordion from "@/components/Accordion";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import MissionVision from "@/components/MissionVision";
 import Navbar from "@/components/Navbar";
 
 export default function About() {
@@ -9,6 +11,8 @@ export default function About() {
       <Navbar />
       <main className="flex-1">
         <AboutMain />
+        <MissionVision />
+        <Accordion />
       </main>
       <CTA />
       <Footer />
