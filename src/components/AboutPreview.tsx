@@ -60,7 +60,7 @@ export default function AboutPreview() {
           {/* Image */}
           <div className="relative aspect-4.6/3 overflow-hidden rounded-xl transition duration-300 hover:scale-105">
             <Image
-              src="/images/About/about.jpg"
+              src="/images/AboutPreview/about.jpg"
               alt="Nail artist working on a client's nails"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
