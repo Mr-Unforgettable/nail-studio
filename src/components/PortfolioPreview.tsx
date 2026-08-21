@@ -4,25 +4,25 @@ const portfolioItems = [
   {
     title: "Acrylic",
     number: "01",
-    image: "/images/Portfolio/Acrylic.jpg",
+    image: "/images/Portfolio/acrylic.jpg",
     alt: "Green acrylic nail design",
   },
   {
     title: "Manicure",
     number: "02",
-    image: "/images/Portfolio/Manicure.jpg",
+    image: "/images/Portfolio/manicure.jpg",
     alt: "Dark manicure nail design",
   },
   {
     title: "Gel Polish",
     number: "03",
-    image: "/images/Portfolio/GelPolish.jpg",
+    image: "/images/Portfolio/gelpolish.jpg",
     alt: "Pink gel polish nail design",
   },
   {
     title: "Other",
     number: "04",
-    image: "/images/Portfolio/Other.jpg",
+    image: "/images/Portfolio/other.jpg",
     alt: "Blue nail design with jewelry",
   },
 ];
