@@ -1,23 +1,13 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import GoogleMap from "./GoogleMap";
 
 export default function Status() {
   return (
     <section className="px-6 py-20 lg:px-8 lg:py-28 bg-[#fdf9f6]">
       <div className="mx-auto max-w-6xl">
-        <div className="relative aspect-16/7 overflow-hidden">
-          <Image
-            src="/images/Contact/map.png"
-            alt="Location of business"
-            fill
-            loading="eager"
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
-          />
-        </div>
-
         {/* Contact Info */}
-        <div className="mt-26 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-2 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="flex items-center gap-2 font-semibold">
               <Phone size={18} />
