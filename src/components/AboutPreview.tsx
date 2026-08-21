@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Award, ShieldCheck, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -40,18 +41,18 @@ export default function AboutPreview() {
 
           {/* Right */}
           <div className="max-w-xl">
-            <p className="text-lg leading-relaxed text-[#6b5e55]">
+            <p className="mb-8 text-lg leading-relaxed text-[#6b5e55]">
               I specialize in clean, modern nail care with a focus on detail,
               comfort, and quality. Every appointment is designed to feel
               relaxed, personal, and thoughtfully crafted.
             </p>
 
-            <button
-              type="button"
-              className="mt-6 rounded-full bg-[#242424] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
+            <Link
+              href="/about"
+              className="rounded-full bg-[#242424] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
             >
               Learn more ↗
-            </button>
+            </Link>
           </div>
         </div>
 

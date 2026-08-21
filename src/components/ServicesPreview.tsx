@@ -41,16 +41,16 @@ export default function Services() {
 
           {/* Right */}
           <div className="max-w-xl">
-            <p className="text-lg leading-relaxed text-[#6b5e55]">
+            <p className="mb-8 text-lg leading-relaxed text-[#6b5e55]">
               Enjoy a relaxing, personalized nail experience with services that
               blend expert craftsmanship and gentle self-care.
             </p>
-            <button
-              type="button"
+            <Link
+              href="/services"
               className="mt-6 rounded-full bg-[#242424] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
             >
-              <Link href="/services">View all ↗</Link>
-            </button>
+              View all ↗
+            </Link>
           </div>
         </div>
       </div>
@@ -77,16 +77,16 @@ export default function Services() {
                 {service.title}
               </h3>
 
-              <p className="mt-3 text-sm leading-relaxed text-[#665d57] md:text-base">
+              <p className="mt-3 mb-8 text-sm leading-relaxed text-[#665d57] md:text-base">
                 {service.description}
               </p>
 
-              <button
-                type="button"
-                className="mt-5 rounded-md px-5 py-2.5 text-sm font-medium text-[#242424] transition bg-[#b89c85] hover:bg-[#b58c6b]"
+              <Link
+                href="/booknow"
+                className="rounded-md px-5 py-2.5 text-sm font-medium text-[#242424] transition bg-[#b89c85] hover:bg-[#b58c6b]"
               >
                 Book now
-              </button>
+              </Link>
             </div>
           </article>
         ))}

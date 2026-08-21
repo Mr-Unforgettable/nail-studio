@@ -7,21 +7,21 @@ export default function Hero() {
       <div className="grid min-h-full grid-cols-1 lg:grid-cols-2 px-6 sm:px-8 lg:px-0">
         {/* Content */}
         <div className="flex flex-col justify-center px-6 py-12 sm:px-8 lg:px-12">
-          <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
             Beautiful Nails, <br /> Designed Just for You
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed sm:text-lg">
+          <p className="mt-6 max-w-xl text-base text-[#6f6259] leading-relaxed sm:text-lg">
             Elevate your everyday look with nail services focused on artistry,
             comfort, and clean, luxurious detail.
           </p>
-
-          <button
-            type="button"
-            className="mt-8 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transition hover:bg-[#b58c6b]"
+          
+          <Link
+            href="/booknow"
+            className="mt-8 self-start rounded-md bg-[#b89c85] px-6 py-3 font-medium text-[#242424] transittion hover:bg-[#b58c6b]"
           >
-            <Link href="/booknow">Book Now</Link>
-          </button>
+            Book Now
+          </Link>
         </div>
 
         {/* Image */}

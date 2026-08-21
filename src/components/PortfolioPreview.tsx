@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const portfolioItems = [
   {
@@ -44,17 +45,17 @@ export default function PortfolioPreview() {
 
           {/* Right */}
           <div className="max-w-xl">
-            <p className="text-lg leading-relaxed text-[#665d57]">
+            <p className="mb-8 text-lg leading-relaxed text-[#665d57]">
               A curated collection of nail designs showcasing clean finishes,
               detail, and creativity.
             </p>
 
-            <button
-              type="button"
+            <Link
+              href="/portfolio"
               className="mt-6 rounded-full bg-[#292929] px-4 py-2 text-sm text-white transition hover:bg-[#403b38]"
             >
               View all ↗
-            </button>
+            </Link>
           </div>
           <div className="max-w-xl md:justify-self-end"></div>
         </div>
