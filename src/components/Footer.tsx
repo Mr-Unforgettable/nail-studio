@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/portfolio"
                   className="text-[#6b5e55] transition hover:text-[#242424]"
                 >
                   Gallery
@@ -95,7 +95,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-[#6b5e55] transition hover:text-[#242424]"
                 >
                   About
