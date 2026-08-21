@@ -28,6 +28,7 @@ export default function Booking() {
                 src="/images/BookNow/booknow.jpg"
                 alt="Client discussing"
                 fill
+                loading="eager"
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover transition duration-300 hover:scale-105"
               />
