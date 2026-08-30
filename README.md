@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nail Studio ✨
 
-## Getting Started
+A responsive marketing and booking website built for a real nail salon client, showcasing services, portfolio work, and client testimonials with an integrated appointment booking flow.
 
-First, run the development server:
+Live site: nail-studio-six.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project was built for an actual client to give their nail salon business a professional online presence — replacing manual/phone-based booking with a self-serve website where clients can browse services, view portfolio work, read reviews, and book appointments directly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Home — Hero section, top-rated signature services, and calls to action for booking
+- Services — Browsable service catalog (Acrylic, Nail Art, Gel Polish, and more)
+- Portfolio/Gallery — Curated showcase of completed nail work, categorized by style
+- About — Artist bio and studio highlights (experience, hygiene practices, personalized service)
+- Testimonials — Client reviews with ratings
+- Book Now — 3-step appointment booking flow:
+1. Choose a service
+2.  Pick a date and time
+3. Enter contact details for confirmation
+- Policies — Clear cancellation, deposit, and lateness policies shown at booking
 
-## Learn More
+# Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Framework: Next.js, TypeScript
+- Styling: Responsive, image-optimized layout (Next.js Image Optimization)
+- Scheduling: Integrated booking embed for date/time selection
+- Deployment: Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Currently a frontend-focused client site with embedded booking functionality. Planned/possible extensions include a custom backend for appointment management (replacing the current embed) and an admin dashboard for the business owner.
 
-## Deploy on Vercel
+# Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built independently as freelance/client work — design, structure, and implementation were handled end-to-end for the client's requirements.
